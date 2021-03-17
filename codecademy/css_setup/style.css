@@ -14,10 +14,17 @@ h1 {
   text-transform: uppercase;
 }
 .publish-time {
-  color:gray;
+  color: gray;
 }
 
-#article-title {
+.cursive {
   font-family: cursive;
+}
+
+.capitalize {
   text-transform: capitalize;
+}
+
+h2.destination {
+  font-family: cursive;
 }
