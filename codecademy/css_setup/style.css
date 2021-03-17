@@ -1,16 +1,23 @@
-p  { 
+p {
   font-family: Arial;
- } 
-h1  {
- color:maroon;
 }
+
+h1 {
+  color: maroon;
+}
+
 .title {
- color:teal;
+  color: teal;
 }
-.uppercase { 
- text-transform: uppercase;
+
+.uppercase {
+  text-transform: uppercase;
 }
+.publish-time {
+  color:gray;
+}
+
 #article-title {
- font-family: cursive;
-text-transform: capitalize;
+  font-family: cursive;
+  text-transform: capitalize;
 }
