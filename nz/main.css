@@ -76,3 +76,11 @@ footer .back {
 footer {
     padding: 1em 0 3em 0;
 }
+
+.mr-3 {
+    margin-right: o.3em;
+}
+
+.ml-3 {
+    margin-left: 0,3em;
+}
