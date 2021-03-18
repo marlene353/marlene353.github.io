@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  color: #FFF;
+  color: #FFF !important;
   font-size: 2em;
   padding-top: 100px;
   width: 100%;
@@ -62,7 +62,7 @@ p {
   width: 60%;
   background-color: white;
   color: black;
-  opacity:0.75;
+  opacity: 0.75;
 }
 
 .content {
