@@ -52,5 +52,10 @@ main figure  {
 
 main figure img {
     border: 1px solid black;
-    
+
+}
+
+#map{
+    height: 360px;
+    width:100%;
 }
