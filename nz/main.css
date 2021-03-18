@@ -42,6 +42,7 @@ main {
 
 main p{
     text-align: justify;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 main figure  {
