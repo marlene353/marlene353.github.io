@@ -7,6 +7,7 @@ const map = L.map("map", {
   });
   
   let mrk = L.marker([ -39.29, 175.56 ]).addTo(map);
+  mrk.bindPopup('Tongariro National Park');
 
 
   console.log(document.querySelector("#map"));
