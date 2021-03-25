@@ -5,12 +5,7 @@ let stop = {
     lng: 170.96911,
     user: "marlene353",
     wikipedia: "https://de.wikipedia.org/wiki/Oamaru"
-}
-
-console.log(stop);
-console.log(stop.name);
-console.log(stop.lat);
-console.log(stop.wikipedia);
+};
 
 const map = L.map("map", {
     center: [ stop.lat, stop.lng  ],
@@ -20,20 +15,37 @@ const map = L.map("map", {
     ]
   });
   
-  console.log(ROUTE);
-for (let entry of ROUTE) {
-  console.log(entry);
+  let nav = document.querySelector("#navigation");
+  console.log (nav);
+
+
+  //console.log(ROUTE);
+  ROUTE.sort ((stop1,stop2)=> {
+      return stop1nr. > stop2.nr
+  });
+
+ for (let entry of ROUTE) {
+  //console.log(entry);
+
+  nav.innerHTML +=   nav.innerHTML += `
+  <option value="${entry.user}">Stop ${entry.nr}: ${entry.name}</option>
+  `;
+  
+
+
   let mrk = L.marker([entry.lat, entry.lng]).addTo(map);
   mrk.bindPopup(`
    <h4>Stop ${entry.nr}: ${entry.name}<h4>
-   <p><a href="${entry.wikipedia}"><i class="fas fa-external-link-alt mr-3"></i>Read 
+   <p><i class="fas fa-external-link-alt mr-3"></i><a href="${entry.wikipedia}">Read 
    about stop in Wikipedia</a></p>
 `);
 
 if(entry.nr=5) {
-    map.setView([entry.lat, entry.lng], 5)  
+    map.setView([entry.lat, entry.lng], 13)  
     mrk.openPopup ();
     }
 }
 
-console.log(document.querySelector("#map"));
+
+//<option value="webmapping">Oamaru</option>
+//console.log(document.querySelector("#map"));
