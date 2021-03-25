@@ -1,5 +1,18 @@
+
+let stop = {
+    nr: 5,
+    lat:-45.09746,
+    lng: 170.96911,
+    user: "marlene353",
+    wikipedia: "https://de.wikipedia.org/wiki/Oamaru"
+}
+console.log(stop);
+console.log(stop.name);
+console.log(stop.lat);
+console.log(stop.wikipedia);
+
 const map = L.map("map", {
-    center: [ -45.09746, 170.96911  ],
+    center: [ stop.lat, stop.lng  ],
     zoom: 13,
     layers: [
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')
