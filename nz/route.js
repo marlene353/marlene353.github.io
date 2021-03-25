@@ -159,14 +159,7 @@ const ROUTE = [
         lng: 176.251389,
         user: "jo3093",
         wikipedia: "https://en.wikipedia.org/wiki/Champagne_Pool"
-    }, {
-        nr: 19,
-        name: "Picton",
-        lat: -41.293056,
-        lng: 174.001944,
-        user: "maximilianender",
-        Wikipedia: "https://en.wikipedia.org/wiki/Picton,_New_Zealand",
-    }, {
+    },  {
         nr: 18,
         name: "Abel Tasman National Park",
         lat: -40.833333,
