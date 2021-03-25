@@ -21,8 +21,10 @@ const map = L.map("map", {
   });
   
   let mrk = L.marker([ -45.09746, 170.96911 ]).addTo(map);
-  mrk.bindPopup(`<h4>Stop ${stop.5}: ${stop.Oamaru}<h4>
-<p><a href="${stop.wikipedia}"><i class="fas fa-external-link-alt mr-3"></i>Read about stop in Wikipedia</a></p>
+  mrk.bindPopup(`
+  <h4>Stop ${stop.5}: ${stop.Oamaru}<h4>
+  <p><a href="${stop.wikipedia}"><i class="fas fa-external-link-alt mr-3"></i>Read about 
+  stop in Wikipedia</a></p>
 `).openPopup();
 
-console.log(document.querySelector("#map"));
+//console.log(document.querySelector("#map"));
