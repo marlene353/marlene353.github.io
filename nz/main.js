@@ -33,7 +33,7 @@ for (let entry of ROUTE) {
 if(entry.nr=5) {
     map.setView([entry.lat, entry.lng], 5)  
     mrk.openPopup ();
-}
+    }
 }
 
 console.log(document.querySelector("#map"));
