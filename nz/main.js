@@ -1,6 +1,7 @@
 
 let stop = {
     nr: 5,
+    name: "Oamaru",
     lat:-45.09746,
     lng: 170.96911,
     user: "marlene353",
