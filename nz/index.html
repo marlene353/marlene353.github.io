@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <title>New Zealand - Oamaru</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet-src.min.js"></script>
+
     <link rel="stylesheet" href="main.css">
-    <script src= "route.js"></script>
-    <script defer src="main.js"></script>
+    <script src="route.js"></script>
+    <script defer src="main.js"></script> <!-- defer = script wird als letztes ausgelesen und ausgeführt -->
+
+    <title>New Zealand Journey - Oamaru</title>
 </head>
 
 
@@ -68,22 +71,27 @@
             (Quelle: <a href="https://en.wikipedia.org/wiki/Oamaru"> Wikipedia</a>)
         </p>
 
-        <h3>Overview Map</h3>
-        <div id="map"></div>
+       
+        <h3>Overview map<i class="ml-3 fas fa-map-marked-alt"></i></h3>
+        <div id="map">
+        </div>
         <label for="navigation">Route Navigation:</label>
-        <select id= "navigation">
+        <select name="New Zealand Journey" id= "navigation">
         </select>
            
 
-        <h3>Overview map</h3>
-        <div></div>
-
         <h3>Links</h3>
+        <p>Weitere Sehenswürdigkeiten vor Ort:
+        </p>
         <ul>
-            <li><a href="https://www.nationalpark.co.nz/">Tongariro National Park Visitor Information</a></li>
-            <li><a href="https://www.newzealand.com/de/feature/national-parks-tongariro/">Tongariro Nationalpark | Ruapehu</a></li>
-            <li><a href="https://wikitravel.org/de/Tongariro_National_Park">Tongariro National Park – Wikitravel</a></li>
-            <li><a href="https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-alpine-crossing/">Tongariro Alpine Crossing</a></li>
+            <li><i class="fas fa-external-link-alt mr-3"></i><a 
+                href="https://www.nationalpark.co.nz/">Tongariro National Park Visitor Information</a></li>
+            <li><i class="fas fa-external-link-alt mr-3"></i><a
+                 href="https://www.newzealand.com/de/feature/national-parks-tongariro/">Tongariro Nationalpark | Ruapehu</a></li>
+            <li><i class="fas fa-external-link-alt mr-3"></i><a 
+                href="https://wikitravel.org/de/Tongariro_National_Park">Tongariro National Park – Wikitravel</a></li>
+            <li><i class="fas fa-external-link-alt mr-3"></i><a
+                 href="https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-alpine-crossing/">Tongariro Alpine Crossing</a></li>
         </ul>
 
     </main>
@@ -91,6 +99,8 @@
     <hr>
 
     <footer>
+        <p>Weiter geht's auf der Route!
+        </p>
         <nav>
             <a class="back" href="https://silja18.github.io/nz/"><i class="fas fa-arrow-left mr-3"></i>Omarama</a>
             <a class="next" href="https://anna7br.github.io/nz/">Moeraki Boulders<i class="fas fa-arrow-right ml-3"></i></a>
