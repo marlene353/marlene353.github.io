@@ -5,5 +5,6 @@ h2{
 #map{
     width: 90vw;
     height: 90vh;
-    border: 
+    border: solid black 1px;
+    margin: auto;
 }
