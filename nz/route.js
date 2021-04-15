@@ -28,7 +28,7 @@ const ROUTE = [{
     wikipedia: "https://en.wikipedia.org/wiki/Tongariro_National_Park"
 }, {
     nr: 1,
-    name: "Christchurch Botanic Gardens",
+    name: "Christchurch",
     lat: -43.53,
     lng: 172.62,
     user: "jbaumgartner1983",
