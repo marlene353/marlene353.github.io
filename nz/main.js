@@ -18,6 +18,7 @@ const map = L.map("map", {
     ]
   });
   
+  //Objekt {} und Lsit & Array [] erstellt
   let nav = document.querySelector("#navigation");
   console.log (nav);
 
@@ -25,7 +26,7 @@ const map = L.map("map", {
   //console.log(ROUTE);
   ROUTE.sort ((stop1,stop2)=> {
       return stop1.nr > stop2.nr
-  });
+  })
 
  for (let entry of ROUTE) {
   //console.log(entry);
@@ -36,13 +37,13 @@ const map = L.map("map", {
   
   let mrk = L.marker([entry.lat, entry.lng]).addTo(map);
   mrk.bindPopup(`
-   <h4>Stop ${entry.nr}: ${entry.name}<h4>
+   <h4>Stop ${entry.nr}: ${entry.name}</h4>
    <p><i class="fas fa-external-link-alt mr-3"></i><a href="${entry.wikipedia}">Read 
-   about stop in Wikipedia</a></p>
+   about the stop in Wikipedia</a></p>
 `);
 
 if(entry.nr==5) {
-    map.setView([entry.lat, entry.lng], 5)  
+    map.setView([entry.lat, entry.lng], 5); 
     mrk.openPopup ();
     }
 }
