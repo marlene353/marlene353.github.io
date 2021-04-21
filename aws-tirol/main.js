@@ -125,7 +125,7 @@ fetch(awsUrl)
 
 
 
-        //LT if (station.properties.LT == 0){
+        //LT if (station.properties.LT == 0)... Lufttemperatur von 0 hinzufügen, weil oben nur alles außer 0 hinzugefügt
              
         // set map view to all stations
         map.fitBounds(awsLayer.getBounds());
