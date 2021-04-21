@@ -35,7 +35,7 @@ let windLayer = L.featureGroup();
 layerControl.addOverlay(windLayer, "Windgeschwindigkeit (km/h)");
 //windLayer.addTo(map); // windlayer dann bei laden angezeigt, rest auswählbar außer durch addtomap hinzugefügt
 
-//tempLayer.addTo(map);
+//tempLayer.addTo(map); Layer hinzufügen nicht vergessen!!!
 let tempLayer = L.featurerGroup();
 layerControl.addOverlay(tempLayer, "Lufttemperatur °C");
 tempLayer.addTo(map);
