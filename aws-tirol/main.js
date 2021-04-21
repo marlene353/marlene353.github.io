@@ -38,15 +38,17 @@ layerControl.addOverlay(windLayer, "Windgeschwindigkeit (km/h)");
 //tempLayer.addTo(map); Layer hinzufügen nicht vergessen!!!
 let tempLayer = L.featurerGroup();
 layerControl.addOverlay(tempLayer, "Lufttemperatur °C");
-tempLayer.addTo(map);
+//tempLayer.addTo(map);
 
 
 fetch(awsUrl)
     .then(response => response.json())
     .then(json => {
         console.log('Daten konvertiert: ', json);
+        //Stationen
         for (station of json.features) {
             // console.log('Station: ', station);
+
             let marker = L.marker([
                 station.geometry.coordinates[1],
                 station.geometry.coordinates[0]
@@ -103,17 +105,17 @@ fetch(awsUrl)
                 });
                 windMarker.addTo(windLayer);
             }
-        }
+        
         if (station.properties.LT) {
-            let tempClass = '';
+            let tempHighlightClass = '';
             if (station.properties.LT > 0) {
-                tempClass < '0';
+                tempHighlightClass = 'temp-pos';
             }
-            if (station.properties.LT > 0) {
-                tempClass > '0';
+            if (station.properties.LT < 0) {
+                tempHighlightClass = 'temp-neg';
             }
             let tempIcon = L.divIcon({
-                html: `<div class="temp-label ${tempClass}">${station.properties.LT}</div>`,
+                html: `<div class="temp-label ${tempHighlightClass}">${station.properties.LT}</div>`,
             });
             let tempMarker = L.marker([
                 station.geometry.coordinates[1],
@@ -122,8 +124,21 @@ fetch(awsUrl)
                 icon: tempIcon
             });
             tempMarker.addTo(tempLayer);
-
-
+        
+        if (station.properties.LT == 0){
+            let tempHighlightClass = '';
+            let tempIcon = L.divIcon({
+                html: `<div class="temp-label ${tempHighlightClass}">${station.properties.LT}</div>`,
+            });
+            let tempMarker = L.marker([
+                station.geometry.coordinates[1],
+                station.geometry.coordinates[0]
+            ], {
+                icon: tempIcon
+            });
+            tempMarker.addTo(tempLayer);
+        }
+// nachfragen was zur Hölle nochmal HighlightClass außer nicht passend weil dumme Frage 
 
         //LT if (station.properties.LT == 0)... Lufttemperatur von 0 hinzufügen, weil oben nur alles außer 0 hinzugefügt
              
