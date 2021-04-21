@@ -21,15 +21,24 @@ let layerControl = L.control.layers({
 
 let awsUrl = 'https://wiski.tirol.gv.at/lawine/produkte/ogd.geojson';
 
+
+//thematische layer
 let awsLayer = L.featureGroup();
 layerControl.addOverlay(awsLayer, "Wetterstationen Tirol");
+
 // awsLayer.addTo(map);
 let snowLayer = L.featureGroup();
 layerControl.addOverlay(snowLayer, "Schneehöhen (cm)");
+
 // snowLayer.addTo(map);
 let windLayer = L.featureGroup();
 layerControl.addOverlay(windLayer, "Windgeschwindigkeit (km/h)");
-windLayer.addTo(map);
+//windLayer.addTo(map); // windlayer dann bei laden angezeigt, rest auswählbar außer durch addtomap hinzugefügt
+
+//tempLayer.addTo(map);
+let tempLayer = L.featurerGroup();
+layerControl.addOverlay(tempLayer, "Lufttemperatur °C");
+tempLayer.addTo(map);
 
 
 fetch(awsUrl)
@@ -95,6 +104,29 @@ fetch(awsUrl)
                 windMarker.addTo(windLayer);
             }
         }
+        if (station.properties.LT) {
+            let tempClass = '';
+            if (station.properties.LT > 0) {
+                tempClass < '0';
+            }
+            if (station.properties.LT > 20) {
+                tempClass > '0';
+            }
+            let tempIcon = L.divIcon({
+                html: `<div class="temp-label ${tempClass}">${station.properties.LT}</div>`,
+            });
+            let tempMarker = L.marker([
+                station.geometry.coordinates[1],
+                station.geometry.coordinates[0]
+            ], {
+                icon: tempIcon
+            });
+            tempMarker.addTo(tempLayer);
+
+
+
+        //LT if (station.properties.LT == 0){
+             
         // set map view to all stations
         map.fitBounds(awsLayer.getBounds());
     });
