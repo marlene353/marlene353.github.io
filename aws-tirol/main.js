@@ -127,7 +127,7 @@ fetch(awsUrl)
                     tempMarker.addTo(tempLayer);
                 }
                 if (station.properties.LT == 0) {
-                    let tempHighlightClass = '';
+                    let tempHighlightClass = 'temp-0';
                     let tempIcon = L.divIcon({
                         html: `<div class="temp-label ${tempHighlightClass}">${station.properties.LT}</div>`,
                     });
