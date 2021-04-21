@@ -109,7 +109,7 @@ fetch(awsUrl)
             if (station.properties.LT > 0) {
                 tempClass < '0';
             }
-            if (station.properties.LT > 20) {
+            if (station.properties.LT > 0) {
                 tempClass > '0';
             }
             let tempIcon = L.divIcon({
