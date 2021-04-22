@@ -14,7 +14,7 @@ let overlays = {
     snowheight: L.featureGroup(),
     windspeed: L.featureGroup(),
     winddirection: L.featureGroup()
-};
+}; 
 
 let layerControl = L.control.layers({
     "BasemapAT.grau": basemapGray,
@@ -30,6 +30,8 @@ let layerControl = L.control.layers({
     "Schneehöhe (cm)": overlays.snowheight,
     "Windgeschwindigkeit (km/h)": overlays.windspeed,
     "Windrichtung": overlays.winddirection
+}, {
+    collapsed:false 
 }).addTo(map);
 overlays.temperature.addTo(map);
 
