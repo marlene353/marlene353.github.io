@@ -71,86 +71,34 @@ fetch(awsUrl)
             <a target="_blank" href="https://wiski.tirol.gv.at/lawine/grafiken/1100/standard/tag/${station.properties.plot}.png">Grafik</a>
             `);
                 marker.addTo(overlays.stations);
-                if (station.properties.HS) {
-                    let highlightClass = '';
-                    if (station.properties.HS > 100) {
-                        highlightClass = 'snow-100';
-                    }
-                    if (station.properties.HS > 200) {
-                        highlightClass = 'snow-200';
-                    }
-                    let snowIcon = L.divIcon({
-                        html: `<div class="snow-label ${highlightClass}">${station.properties.HS}</div>`
-                    })
-                    let snowMarker = L.marker([
-                        station.geometry.coordinates[1],
-                        station.geometry.coordinates[0]
-                    ], {
-                        icon: snowIcon
+               
+                if (typeof station.properties.HS == "number") {
+                    let marker  = newLabel(station.geometry.coordinates, {
+                        value:station.properties.HS
                     });
-                    snowMarker.addTo(overlays.snowheight);
+                    marker.addTo (overlays.snowheight);
                 }
-                if (station.properties.WG) {
-                    let windHighlightClass = '';
-                    if (station.properties.WG > 10) {
-                        windHighlightClass = 'wind-10';
-                    }
-                    if (station.properties.WG > 20) {
-                        windHighlightClass = 'wind-20';
-                    }
-                    let windIcon = L.divIcon({
-                        html: `<div class="wind-label ${windHighlightClass}">${station.properties.WG}</div>`,
+                if (typeof station.properties.WR == "number") {
+                    let marker  = newLabel(station.geometry.coordinates, {
+                        value:station.properties.WR
                     });
-                    let windMarker = L.marker([
-                        station.geometry.coordinates[1],
-                        station.geometry.coordinates[0]
-                    ], {
-                        icon: windIcon
-                    });
-                    windMarker.addTo(overlays.windspeed);
+                    marker.addTo (overlays.winddirection);
                 }
-
-                if (station.properties.LT) {
-                    let tempHighlightClass = '';
-                    if (station.properties.LT > 0) {
-                        tempHighlightClass = 'temp-pos';
-                    }
-                    if (station.properties.LT < 0) {
-                        tempHighlightClass = 'temp-neg';
-                    }
-                    let tempIcon = L.divIcon({
-                        html: `<div class="temp-label ${tempHighlightClass}">${station.properties.LT}</div>`,
+                if (typeof station.properties.WG == "number") {
+                    let marker  = newLabel(station.geometry.coordinates, {
+                        value:station.properties.WG
                     });
-                    let tempMarker = L.marker([
-                        station.geometry.coordinates[1],
-                        station.geometry.coordinates[0]
-                    ], {
-                        icon: tempIcon
-                    });
-                    tempMarker.addTo(overlays.temperature);
-                }
-                if (station.properties.LT == 0) {
-                    let tempHighlightClass = 'temp-0';
-                    let tempIcon = L.divIcon({
-                        html: `<div class="temp-label ${tempHighlightClass}">${station.properties.LT}</div>`,
-                    });
-                    let tempMarker = L.marker([
-                        station.geometry.coordinates[1],
-                        station.geometry.coordinates[0]
-                    ], {
-                        icon: tempIcon
-                    });
-                    tempMarker.addTo(overlays.temperature);
+                    marker.addTo (overlays.windspeed);
                 }
                 if (typeof station.properties.LT == "number") {
                     let marker  = newLabel(station.geometry.coordinates, {
                         value:station.properties.LT
                     });
-                    marker.addTo (map);
+                    marker.addTo (overlays.temperature);
                 }
-            } 
-                // set map view to all stations
                 map.fitBounds(overlays.stations.getBounds());
+             } 
+               
             });
 
             
