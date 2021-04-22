@@ -36,11 +36,14 @@ let layerControl = L.control.layers({
 overlays.temperature.addTo(map);
 
 let newLabel = (coords, options) => {
-    console.log("Koordinaten coords:", coords)
-    console.log("Optionsobjekt:", options);
-    let marker = L.marker([coords[1],coords[2]])
-    console.log("Marker:", marker),
-    return marker;
+   let label = L.divIcon({
+       html:'<div>${options.value}</div>',
+       className: "text-label"
+   })
+    let marker = L.marker([coords[1],coords[2]], {
+       icon:label
+   });
+ return marker;
 };
 
 let awsUrl = 'https://wiski.tirol.gv.at/lawine/produkte/ogd.geojson';
