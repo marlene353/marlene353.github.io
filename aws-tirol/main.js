@@ -104,7 +104,7 @@ fetch(awsUrl)
                     ], {
                         icon: windIcon
                     });
-                    windMarker.addTo(overlays,windspeed);
+                    windMarker.addTo(overlays.windspeed);
                 }
 
                 if (station.properties.LT) {
