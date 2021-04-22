@@ -1,6 +1,5 @@
 let basemapGray = L.tileLayer.provider('BasemapAT.grau');
 
-//https://leafletjs.com/reference-1.7.1.html#map-example
 let map = L.map("map", {
     center: [47, 11],
     zoom: 9,
@@ -10,7 +9,7 @@ let map = L.map("map", {
 });
 
 let overlays = {
-    staions:L.featureGroup(), 
+    stations:L.featureGroup(), 
     temperature: L.featureGroup(),
     snowheight: L.featureGroup(),
     windspeed: L.featureGroup(),
@@ -19,10 +18,8 @@ let overlays = {
 
 let layerControl = L.control.layers({
     "BasemapAT.grau": basemapGray,
-    //https://leafletjs.com/reference-1.7.1.html#tilelayer
     "BasemapAT.orthofoto": L.tileLayer.provider('BasemapAT.orthofoto'),
     "BasemapAT.surface": L.tileLayer.provider('BasemapAT.surface'),
-    //https://leafletjs.com/reference-1.7.1.html#layergroup
     "BasemapAT.overlay+ortho": L.layerGroup([
         L.tileLayer.provider('BasemapAT.orthofoto'),
         L.tileLayer.provider('BasemapAT.overlay')
@@ -42,10 +39,7 @@ fetch(awsUrl)
     .then(response => response.json())
     .then(json => {
             console.log('Daten konvertiert: ', json);
-            //Stationen
             for (station of json.features) {
-                // console.log('Station: ', station);
-                //https://leafletjs.com/reference-1.7.1.html#marker
                 let marker = L.marker([
                     station.geometry.coordinates[1],
                     station.geometry.coordinates[0]
@@ -73,7 +67,6 @@ fetch(awsUrl)
                         highlightClass = 'snow-200';
                     }
                     let snowIcon = L.divIcon({
-                        //https://leafletjs.com/reference-1.7.1.html#divicon
                         html: `<div class="snow-label ${highlightClass}">${station.properties.HS}</div>`
                     })
                     let snowMarker = L.marker([
