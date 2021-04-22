@@ -35,6 +35,14 @@ let layerControl = L.control.layers({
 }).addTo(map);
 overlays.temperature.addTo(map);
 
+let newLabel = (coords, options) => {
+    console.log("Koordinaten coords:", coords)
+    console.log("Optionsobjekt:", options);
+    let marker = L.marker([coords[1],coords[2]])
+    console.log("Marker:", marker),
+    return marker;
+};
+
 let awsUrl = 'https://wiski.tirol.gv.at/lawine/produkte/ogd.geojson';
 
 fetch(awsUrl)
@@ -59,7 +67,7 @@ fetch(awsUrl)
             </ul>
             <a target="_blank" href="https://wiski.tirol.gv.at/lawine/grafiken/1100/standard/tag/${station.properties.plot}.png">Grafik</a>
             `);
-                marker.addTo(awsLayer);
+                marker.addTo(overlays.stations);
                 if (station.properties.HS) {
                     let highlightClass = '';
                     if (station.properties.HS > 100) {
@@ -129,11 +137,18 @@ fetch(awsUrl)
                     ], {
                         icon: tempIcon
                     });
-                    tempMarker.addTo(tempLayer);
+                    tempMarker.addTo(overlays.temperature);
+                }
+                if (typeof station.properties.LT == "number") {
+                    let marker  = newLabel(station.geometry.coordinates, {
+                        value:station.properties.LT
+                    });
+                    marker.addTo (map);
                 }
             } 
-
-
                 // set map view to all stations
                 map.fitBounds(overlays.stations.getBounds());
             });
+
+            
+    
