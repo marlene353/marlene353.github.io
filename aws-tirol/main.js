@@ -9,7 +9,14 @@ let map = L.map("map", {
     ]
 });
 
-//https://leafletjs.com/reference-1.7.1.html#control
+let overlays = {
+    staions:L.featureGroup(), 
+    temperature: L.featureGroup(),
+    snowheight: L.featureGroup(),
+    windspeed: L.featureGroup(),
+    winddirection: L.featureGroup()
+};
+
 let layerControl = L.control.layers({
     "BasemapAT.grau": basemapGray,
     //https://leafletjs.com/reference-1.7.1.html#tilelayer
@@ -20,32 +27,16 @@ let layerControl = L.control.layers({
         L.tileLayer.provider('BasemapAT.orthofoto'),
         L.tileLayer.provider('BasemapAT.overlay')
     ])
+}, {
+    "Wetterstationen Tirol": overlays.stations,
+    "Temperatur (°C)": overlays.temperature,
+    "Schneehöhe (cm)": overlays.snowheight,
+    "Windgeschwindigkeit (km/h)": overlays.windspeed,
+    "Windrichtung": overlays.winddirection
 }).addTo(map);
-
+overlays.temperature.addTo(map);
 
 let awsUrl = 'https://wiski.tirol.gv.at/lawine/produkte/ogd.geojson';
-
-
-//thematische layer
-// awsLayer.addTo(map);
-let awsLayer = L.featureGroup(); 
-//https://leafletjs.com/reference-1.7.1.html#featuregroup
-layerControl.addOverlay(awsLayer, "Wetterstationen Tirol");
-
-// snowLayer.addTo(map);
-let snowLayer = L.featureGroup();
-layerControl.addOverlay(snowLayer, "Schneehöhen (cm)");
-
-//windLayer.addTo(map);
-let windLayer = L.featureGroup();
-layerControl.addOverlay(windLayer, "Windgeschwindigkeit (km/h)");
-// windlayer dann bei laden angezeigt, rest auswählbar außer durch addtomap hinzugefügt
-
-//tempLayer.addTo(map); Layer hinzufügen nicht vergessen!!!
-let tempLayer = L.featureGroup();
-layerControl.addOverlay(tempLayer, "Lufttemperatur °C");
-tempLayer.addTo(map);
-
 
 fetch(awsUrl)
     .then(response => response.json())
@@ -91,7 +82,7 @@ fetch(awsUrl)
                     ], {
                         icon: snowIcon
                     });
-                    snowMarker.addTo(snowLayer);
+                    snowMarker.addTo(overlays.snowheight);
                 }
                 if (station.properties.WG) {
                     let windHighlightClass = '';
@@ -110,7 +101,7 @@ fetch(awsUrl)
                     ], {
                         icon: windIcon
                     });
-                    windMarker.addTo(windLayer);
+                    windMarker.addTo(overlays,windspeed);
                 }
 
                 if (station.properties.LT) {
@@ -130,7 +121,7 @@ fetch(awsUrl)
                     ], {
                         icon: tempIcon
                     });
-                    tempMarker.addTo(tempLayer);
+                    tempMarker.addTo(overlays.temperature);
                 }
                 if (station.properties.LT == 0) {
                     let tempHighlightClass = 'temp-0';
@@ -146,10 +137,8 @@ fetch(awsUrl)
                     tempMarker.addTo(tempLayer);
                 }
             } 
-                // nachfragen was zur Hölle nochmal HighlightClass außer nicht passend weil dumme Frage 
 
-                //LT if (station.properties.LT == 0)... Lufttemperatur von 0 hinzufügen, weil oben nur alles außer 0 hinzugefügt
 
                 // set map view to all stations
-                map.fitBounds(awsLayer.getBounds());
+                map.fitBounds(overlays.stations.getBounds());
             });
