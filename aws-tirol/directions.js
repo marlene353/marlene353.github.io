@@ -1,0 +1,69 @@
+const DIRECTIONS = [{
+    min: 0.00,
+    max: 11.25,
+    dir: "N"
+}, {
+    min: 11.25,
+    max: 33.75,
+    dir: "NNO"
+}, {
+    min: 33.75,
+    max: 56.25,
+    dir: "NO"
+}, {
+    min: 56.25,
+    max: 78.75,
+    dir: "ONO"
+}, {
+    min: 78.75,
+    max: 101.25,
+    dir: "O"
+}, {
+    min: 101.25,
+    max: 123.75,
+    dir: "OSO"
+}, {
+    min: 123.75,
+    max: 146.25,
+    dir: "SO"
+}, {
+    min: 146.25,
+    max: 168.75,
+    dir: "SSO"
+}, {
+    min: 168.75,
+    max: 191.25,
+    dir: "S"
+}, {
+    min: 191.25,
+    max: 213.75,
+    dir: "SSW"
+}, {
+    min: 213.75,
+    max: 236.25,
+    dir: "SW"
+}, {
+    min: 236.25,
+    max: 258.75,
+    dir: "WSW"
+}, {
+    min: 258.75,
+    max: 281.25,
+    dir: "W"
+}, {
+    min: 281.25,
+    max: 303.75,
+    dir: "WNW"
+}, {
+    min: 303.75,
+    max: 326.25,
+    dir: "NW"
+}, {
+    min: 326.25,
+    max: 348.75,
+    dir: "NNW"
+}, {
+    min: 348.75,
+    max: 360.10, // ein kleiner hack für "inklusive 360°"
+    dir: "N"
+}];
