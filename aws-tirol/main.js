@@ -142,9 +142,20 @@ fetch(awsUrl)
                         station: station.properties.name
                     });
                     marker.addTo (overlays.temperature);
+                }
              } 
                 map.fitBounds(overlays.stations.getBounds());
             });
 
-            
+  // Change default options
+  L.control.rainviewer({ 
+    position: 'bottomleft',
+    nextButtonText: '>',
+    playStopButtonText: 'Play/Stop',
+    prevButtonText: '<',
+    positionSliderLabelText: "Hour:",
+    opacitySliderLabelText: "Opacity:",
+    animationInterval: 500,
+    opacity: 0.5
+}).addTo(map);   
     
