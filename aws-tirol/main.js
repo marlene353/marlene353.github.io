@@ -40,19 +40,31 @@ L.control.scale({
 }).addTo(map);
 
 let getColor = (value, colorRamp) => {
-    console.log("Wert:", value, "Palette:", colorRamp);
+    for(let rule of colorRamp) {
+        if(value >= rule.min && value < rule.max) {
+            return rule.col;
+        }
+    }
+    return "black";
 };
 
+///let getDirection = (value, directionRamp) => {
+    //for( let rule of directionRamp) {
+        //if(value >= rule.min && value < rule.max) {
+            //return rule.dir;
+        }
+    }
+}
 
 let newLabel = (coords, options) => {
     let color = getColor(options.value, options.colors);
    let label = L.divIcon({
-       html:'<div>${options.value}</div>',
+    html: `<div style="background-color:${color}">${options.value}</div>`,
        className: "text-label"
    })
-    let marker = L.marker([coords[1],coords[2]], {
+    let marker = L.marker([coords[1],coords[0]], {
        icon:label,
-       title: 
+       title: `${options.station} (${coords[2]}m)`
    });
  return marker;
 };
@@ -67,6 +79,7 @@ fetch(awsUrl)
                     station.geometry.coordinates[1],
                     station.geometry.coordinates[0]
                 ]);
+                //let direction = getDirection (station.properties.WR, DIRECTIONS);
                 let formattedDate = new Date(station.properties.date);
                 marker.bindPopup(`
             <h3>${station.properties.name}</h3>
@@ -76,30 +89,37 @@ fetch(awsUrl)
               <li>Temperatur: ${station.properties.LT} C</li>
               <li>Schneehöhe: ${station.properties.HS || '?'} cm</li>
               <li>Windgeschwindigkeit: ${station.properties.WG || '?'} km/h</li>
-              <li>Windrichtung: ${station.properties.WR || '?'}</li>
+              <li>Windrichtung: ${direction || '?'}</li>
+              <li>Relative Luftfeuchtigkeit: ${station.properties.RH || '?'}</li>
             </ul>
             <a target="_blank" href="https://wiski.tirol.gv.at/lawine/grafiken/1100/standard/tag/${station.properties.plot}.png">Grafik</a>
             `);
                 marker.addTo(overlays.stations);
                
+                //Schneehöhe
                 if (typeof station.properties.HS == "number") {
                     let marker  = newLabel(station.geometry.coordinates, {
-                        value: station.properties.HS
-                        colors: COLORS.snowheight
+                        value: station.properties.HS.toFixed (0),
+                        colors: COLORS.snowheight,
+                        station: station.properties.name
                     });
                     marker.addTo (overlays.snowheight);
                 }
+                //Windgeschwindigkeit
                 if (typeof station.properties.WG == "number") {
                     let marker  = newLabel(station.geometry.coordinates, {
-                        value:station.properties.WG,
-                        colors: COLORS.windspeed
+                        value:station.properties.WG.toFixed(0),
+                        colors: COLORS.windspeed,
+                        station:station.properties.name
                     });
                     marker.addTo (overlays.windspeed);
                 }
+                //Temperatur
                 if (typeof station.properties.LT == "number") {
                     let marker  = newLabel(station.geometry.coordinates, {
-                        value:station.properties.LT,
-                        colors: COLORS.temperature
+                        value:station.properties.LT.toFixed(1),
+                        colors: COLORS.temperature,
+                        station: station.properties.name
                     });
                     marker.addTo (overlays.temperature);
                 }  
