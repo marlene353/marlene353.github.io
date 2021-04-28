@@ -141,7 +141,7 @@ fetch(awsUrl)
                         colors: COLORS.humidity,
                         station: station.properties.name
                     });
-                    marker.addTo (overlays.temperature);
+                    marker.addTo (overlays.humidity);
                 }
              } 
                 map.fitBounds(overlays.stations.getBounds());
