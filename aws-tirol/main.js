@@ -38,7 +38,9 @@ let layerControl = L.control.layers({
 overlays.temperature.addTo(map);
 
 L.control.scale({
-    imperial: false
+    imperial: false, 
+    maxWidth:200,
+    metric:true,
 }).addTo(map);
 
 let getColor = (value, colorRamp) => {
@@ -59,7 +61,7 @@ let getDirection = (value, directionRamp) => {
 }
 
 let newLabel = (coords, options) => {
-    let color = getColor(options.value, options.colors);
+   let color = getColor(options.value, options.colors);
    let label = L.divIcon({
     html: `<div style="background-color:${color}">${options.value}</div>`,
        className: "text-label"
@@ -95,7 +97,7 @@ fetch(awsUrl)
             <ul>
               <li>Datum: ${formattedDate.toLocaleString("de")}</li>
               <li>Seehöhe: ${station.geometry.coordinates[2]} m</li>
-              <li>Temperatur: ${station.properties.LT} C</li>
+              <li>Temperatur: ${station.properties.LT} °C</li>
               <li>Schneehöhe: ${station.properties.HS || '?'} cm</li>
               <li>Windgeschwindigkeit: ${station.properties.WG || '?'} km/h</li>
               <li>Windrichtung: ${direction || '?'}</li>
