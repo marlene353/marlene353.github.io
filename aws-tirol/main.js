@@ -50,10 +50,10 @@ let getColor = (value, colorRamp) => {
     return "black";
 };
 
-///let getDirection = (value, directionRamp) => {
-    //for( let rule of directionRamp) {
-        //if(value >= rule.min && value < rule.max) {
-            //return rule.dir;
+let getDirection = (value, directionRamp) => {
+    for( let rule of directionRamp) {
+        if(value >= rule.min && value < rule.max) {
+            return rule.dir;
         }
     }
 }
@@ -82,7 +82,14 @@ fetch(awsUrl)
                     station.geometry.coordinates[0]
                 ]);
                 let formattedDate = new Date(station.properties.date);
-                //let direction = getDirection (station.properties.WR, DIRECTIONS);
+
+                let direction = ''; 
+                if (typeof station.properties.WR == "number") {
+                    direction = getDirection(station.properties.WR, DIRECTIONS);
+                } else{
+                    direction="NA";
+                }
+               
                 marker.bindPopup(`
             <h3>${station.properties.name}</h3>
             <ul>
