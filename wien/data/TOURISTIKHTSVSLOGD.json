@@ -1,1 +1,963 @@
-{"type":"FeatureCollection","totalFeatures":56,"features":[{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7edc","geometry":{"type":"Point","coordinates":[16.36935904770234,48.202633348016846]},"geometry_name":"SHAPE","properties":{"OBJECTID":1,"ID":1,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":1,"STAT_NAME":"Staatsoper","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7edb","geometry":{"type":"Point","coordinates":[16.361925659691156,48.20495531437401]},"geometry_name":"SHAPE","properties":{"OBJECTID":2,"ID":2,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":2,"STAT_NAME":"Kunsthistorisches Museum","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eda","geometry":{"type":"Point","coordinates":[16.361623169449032,48.20279744448567]},"geometry_name":"SHAPE","properties":{"OBJECTID":3,"ID":3,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":3,"STAT_NAME":"Mariahilfer Straße","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed9","geometry":{"type":"Point","coordinates":[16.361507358161838,48.20966708834754]},"geometry_name":"SHAPE","properties":{"OBJECTID":4,"ID":4,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":5,"STAT_NAME":"Burgtheater/Rathaus","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed8","geometry":{"type":"Point","coordinates":[16.36208588511522,48.212565363709956]},"geometry_name":"SHAPE","properties":{"OBJECTID":5,"ID":5,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":6,"STAT_NAME":"Liebenberg Denkmal","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed7","geometry":{"type":"Point","coordinates":[16.363777402354103,48.216035356679185]},"geometry_name":"SHAPE","properties":{"OBJECTID":6,"ID":6,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":7,"STAT_NAME":"Liechtensteinstraße","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed6","geometry":{"type":"Point","coordinates":[16.375807980823687,48.22248674879128]},"geometry_name":"SHAPE","properties":{"OBJECTID":7,"ID":7,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":8,"STAT_NAME":"Augarten","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed5","geometry":{"type":"Point","coordinates":[16.38065862423194,48.21733264047538]},"geometry_name":"SHAPE","properties":{"OBJECTID":8,"ID":8,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":9,"STAT_NAME":"Taborstraße","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed4","geometry":{"type":"Point","coordinates":[16.37912507673926,48.212741469531395]},"geometry_name":"SHAPE","properties":{"OBJECTID":9,"ID":9,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":10,"STAT_NAME":"Schwedenbrücke","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed3","geometry":{"type":"Point","coordinates":[16.376672736234166,48.21212562654462]},"geometry_name":"SHAPE","properties":{"OBJECTID":10,"ID":10,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":11,"STAT_NAME":"Morzinplatz","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed2","geometry":{"type":"Point","coordinates":[16.377645629147047,48.21182223592462]},"geometry_name":"SHAPE","properties":{"OBJECTID":11,"ID":11,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":12,"STAT_NAME":"Schwedenplatz","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed1","geometry":{"type":"Point","coordinates":[16.382011427066764,48.20666093962066]},"geometry_name":"SHAPE","properties":{"OBJECTID":12,"ID":12,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":13,"STAT_NAME":"MAK/Wien-Mitte","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed0","geometry":{"type":"Point","coordinates":[16.382298774776523,48.205788767021694]},"geometry_name":"SHAPE","properties":{"OBJECTID":13,"ID":13,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":14,"STAT_NAME":"Hotel Hilton/Stadtpark","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ecf","geometry":{"type":"Point","coordinates":[16.37782353678995,48.20323786047263]},"geometry_name":"SHAPE","properties":{"OBJECTID":14,"ID":14,"LINE_ID":1,"LINE_NAME":"Red Line","STAT_ID":15,"STAT_NAME":"Kursalon","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ece","geometry":{"type":"Point","coordinates":[16.3938856816957,48.21121665896683]},"geometry_name":"SHAPE","properties":{"OBJECTID":15,"ID":15,"LINE_ID":3,"LINE_NAME":"Blue Line","STAT_ID":17,"STAT_NAME":"Kunst Haus","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ecd","geometry":{"type":"Point","coordinates":[16.395637071167755,48.217704326718284]},"geometry_name":"SHAPE","properties":{"OBJECTID":16,"ID":16,"LINE_ID":3,"LINE_NAME":"Blue Line","STAT_ID":18,"STAT_NAME":"Prater","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ecc","geometry":{"type":"Point","coordinates":[16.405754171417872,48.22587032203087]},"geometry_name":"SHAPE","properties":{"OBJECTID":17,"ID":17,"LINE_ID":3,"LINE_NAME":"Blue Line","STAT_ID":19,"STAT_NAME":"Reichsbrücke/Pier 3","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ecb","geometry":{"type":"Point","coordinates":[16.40589620583711,48.22575708897929]},"geometry_name":"SHAPE","properties":{"OBJECTID":18,"ID":18,"LINE_ID":3,"LINE_NAME":"Blue Line","STAT_ID":20,"STAT_NAME":"Reichsbrücke/Pier 8","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eca","geometry":{"type":"Point","coordinates":[16.408751517150495,48.241910370541355]},"geometry_name":"SHAPE","properties":{"OBJECTID":19,"ID":19,"LINE_ID":3,"LINE_NAME":"Blue Line","STAT_ID":21,"STAT_NAME":"Donauturm","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec9","geometry":{"type":"Point","coordinates":[16.42408080808733,48.23795457700857]},"geometry_name":"SHAPE","properties":{"OBJECTID":20,"ID":20,"LINE_ID":3,"LINE_NAME":"Blue Line","STAT_ID":22,"STAT_NAME":"Alte Donau","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec8","geometry":{"type":"Point","coordinates":[16.41714213113326,48.232650959757926]},"geometry_name":"SHAPE","properties":{"OBJECTID":21,"ID":21,"LINE_ID":3,"LINE_NAME":"Blue Line","STAT_ID":23,"STAT_NAME":"UNO City","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec7","geometry":{"type":"Point","coordinates":[16.409739647712616,48.22867328876768]},"geometry_name":"SHAPE","properties":{"OBJECTID":22,"ID":22,"LINE_ID":3,"LINE_NAME":"Blue Line","STAT_ID":24,"STAT_NAME":"Reichsbrücke","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec6","geometry":{"type":"Point","coordinates":[16.393220752033628,48.218253570854074]},"geometry_name":"SHAPE","properties":{"OBJECTID":23,"ID":23,"LINE_ID":3,"LINE_NAME":"Blue Line","STAT_ID":25,"STAT_NAME":"Praterstern","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec5","geometry":{"type":"Point","coordinates":[16.313345025353744,48.18674885301905]},"geometry_name":"SHAPE","properties":{"OBJECTID":24,"ID":24,"LINE_ID":2,"LINE_NAME":"Yellow Line","STAT_ID":28,"STAT_NAME":"Schloss Schönbrunn","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec4","geometry":{"type":"Point","coordinates":[16.376305687462693,48.184424667665034]},"geometry_name":"SHAPE","properties":{"OBJECTID":25,"ID":25,"LINE_ID":2,"LINE_NAME":"Yellow Line","STAT_ID":29,"STAT_NAME":"Hauptbahnhof/Sonnwendgasse","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec3","geometry":{"type":"Point","coordinates":[16.388963190269205,48.18431612869022]},"geometry_name":"SHAPE","properties":{"OBJECTID":26,"ID":26,"LINE_ID":2,"LINE_NAME":"Yellow Line","STAT_ID":30,"STAT_NAME":"Heeresgeschichtliches Museum","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec2","geometry":{"type":"Point","coordinates":[16.382972740902968,48.186269906054505]},"geometry_name":"SHAPE","properties":{"OBJECTID":27,"ID":27,"LINE_ID":2,"LINE_NAME":"Yellow Line","STAT_ID":31,"STAT_NAME":"21er Haus Wien","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec1","geometry":{"type":"Point","coordinates":[16.379809935040786,48.191121480265814]},"geometry_name":"SHAPE","properties":{"OBJECTID":28,"ID":28,"LINE_ID":2,"LINE_NAME":"Yellow Line","STAT_ID":32,"STAT_NAME":"Schloss Belvedere","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec0","geometry":{"type":"Point","coordinates":[16.375354117765802,48.19774082309208]},"geometry_name":"SHAPE","properties":{"OBJECTID":29,"ID":29,"LINE_ID":2,"LINE_NAME":"Yellow Line","STAT_ID":33,"STAT_NAME":"Schwarzenberg Platz","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ebf","geometry":{"type":"Point","coordinates":[16.358429676967152,48.222871114551516]},"geometry_name":"SHAPE","properties":{"OBJECTID":30,"ID":30,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":36,"STAT_NAME":"Palais Liechtenstein","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ebe","geometry":{"type":"Point","coordinates":[16.34398028778266,48.25589258199248]},"geometry_name":"SHAPE","properties":{"OBJECTID":31,"ID":31,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":36,"STAT_NAME":"Grinzing/Sandgasse","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ebd","geometry":{"type":"Point","coordinates":[16.336822699801328,48.25884767356834]},"geometry_name":"SHAPE","properties":{"OBJECTID":32,"ID":32,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":37,"STAT_NAME":"Grinzing/Cobenzlgasse","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ebc","geometry":{"type":"Point","coordinates":[16.336460209175716,48.27506504622829]},"geometry_name":"SHAPE","properties":{"OBJECTID":33,"ID":33,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":38,"STAT_NAME":"Kahlenberg","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ebb","geometry":{"type":"Point","coordinates":[16.329097071200714,48.30495658291962]},"geometry_name":"SHAPE","properties":{"OBJECTID":34,"ID":34,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":41,"STAT_NAME":"Stift Klosterneuburg","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eba","geometry":{"type":"Point","coordinates":[16.326576098566022,48.30368591166329]},"geometry_name":"SHAPE","properties":{"OBJECTID":35,"ID":35,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":42,"STAT_NAME":"Roman-Scholz-Platz","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb9","geometry":{"type":"Point","coordinates":[16.357524229808003,48.23739726061796]},"geometry_name":"SHAPE","properties":{"OBJECTID":36,"ID":36,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":45,"STAT_NAME":"Schlumberger/Spittelau","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb8","geometry":{"type":"Point","coordinates":[16.367250077013825,48.221414278166996]},"geometry_name":"SHAPE","properties":{"OBJECTID":37,"ID":37,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":46,"STAT_NAME":"Rossauer Lände","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb7","geometry":{"type":"Point","coordinates":[16.36014082268108,48.215534199722015]},"geometry_name":"SHAPE","properties":{"OBJECTID":38,"ID":38,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":47,"STAT_NAME":"Votivkirche/Altes AKH","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb6","geometry":{"type":"Point","coordinates":[16.356215271937582,48.21099785003628]},"geometry_name":"SHAPE","properties":{"OBJECTID":39,"ID":39,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":48,"STAT_NAME":"Friedrich-Schmidt-Platz","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb5","geometry":{"type":"Point","coordinates":[16.860252557710787,48.112275291315434]},"geometry_name":"SHAPE","properties":{"OBJECTID":40,"ID":40,"LINE_ID":5,"LINE_NAME":"Grey Line","STAT_ID":52,"STAT_NAME":"Römerstadt Carnuntum","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb4","geometry":{"type":"Point","coordinates":[16.90097922479333,48.19790037328049]},"geometry_name":"SHAPE","properties":{"OBJECTID":41,"ID":41,"LINE_ID":5,"LINE_NAME":"Grey Line","STAT_ID":54,"STAT_NAME":"Schloss Niederweiden","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb3","geometry":{"type":"Point","coordinates":[16.937218737169275,48.213893057989026]},"geometry_name":"SHAPE","properties":{"OBJECTID":42,"ID":42,"LINE_ID":5,"LINE_NAME":"Grey Line","STAT_ID":55,"STAT_NAME":"Schloss Hof","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb2","geometry":{"type":"Point","coordinates":[16.519305120360585,47.84647065412761]},"geometry_name":"SHAPE","properties":{"OBJECTID":43,"ID":43,"LINE_ID":6,"LINE_NAME":"Orange Line","STAT_ID":61,"STAT_NAME":"Eisenstadt","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb1","geometry":{"type":"Point","coordinates":[16.519694231435157,47.84581369628876]},"geometry_name":"SHAPE","properties":{"OBJECTID":44,"ID":44,"LINE_ID":6,"LINE_NAME":"Orange Line","STAT_ID":62,"STAT_NAME":"Eisenstadt","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb0","geometry":{"type":"Point","coordinates":[16.544244065487902,47.82128260285334]},"geometry_name":"SHAPE","properties":{"OBJECTID":45,"ID":45,"LINE_ID":6,"LINE_NAME":"Orange Line","STAT_ID":63,"STAT_NAME":"Weingut Esterházy","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eaf","geometry":{"type":"Point","coordinates":[16.6465547376921,47.80219262236038]},"geometry_name":"SHAPE","properties":{"OBJECTID":46,"ID":46,"LINE_ID":6,"LINE_NAME":"Orange Line","STAT_ID":65,"STAT_NAME":"Märchenpark/St. Margarethen","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eae","geometry":{"type":"Point","coordinates":[16.6782493748719,47.80209345256028]},"geometry_name":"SHAPE","properties":{"OBJECTID":47,"ID":47,"LINE_ID":6,"LINE_NAME":"Orange Line","STAT_ID":66,"STAT_NAME":"Rust Seehotel","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ead","geometry":{"type":"Point","coordinates":[16.36940357109592,48.2026220657252]},"geometry_name":"SHAPE","properties":{"OBJECTID":48,"ID":48,"LINE_ID":2,"LINE_NAME":"Yellow Line","STAT_ID":1,"STAT_NAME":"Staatsoper","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eac","geometry":{"type":"Point","coordinates":[16.361983357154326,48.20491604149029]},"geometry_name":"SHAPE","properties":{"OBJECTID":49,"ID":49,"LINE_ID":2,"LINE_NAME":"Yellow Line","STAT_ID":2,"STAT_NAME":"Kunsthistorisches Museum","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eab","geometry":{"type":"Point","coordinates":[16.36146131576848,48.20964252992925]},"geometry_name":"SHAPE","properties":{"OBJECTID":50,"ID":50,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":5,"STAT_NAME":"Burgtheater/Rathaus","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eaa","geometry":{"type":"Point","coordinates":[16.36201798891372,48.21252126730682]},"geometry_name":"SHAPE","properties":{"OBJECTID":51,"ID":51,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":6,"STAT_NAME":"Liebenberg Denkmal","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ea9","geometry":{"type":"Point","coordinates":[16.363797313725524,48.216015015549004]},"geometry_name":"SHAPE","properties":{"OBJECTID":52,"ID":52,"LINE_ID":4,"LINE_NAME":"Green Line","STAT_ID":7,"STAT_NAME":"Liechtensteinstraße","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ea8","geometry":{"type":"Point","coordinates":[16.381982516456443,48.20667837102631]},"geometry_name":"SHAPE","properties":{"OBJECTID":53,"ID":53,"LINE_ID":3,"LINE_NAME":"Blue Line","STAT_ID":13,"STAT_NAME":"MAK/Wien-Mitte","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ea7","geometry":{"type":"Point","coordinates":[16.382249016111004,48.20579351652877]},"geometry_name":"SHAPE","properties":{"OBJECTID":54,"ID":54,"LINE_ID":5,"LINE_NAME":"Grey Line","STAT_ID":14,"STAT_NAME":"Hotel Hilton/Stadtpark","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ea6","geometry":{"type":"Point","coordinates":[16.382263513909226,48.20582195717883]},"geometry_name":"SHAPE","properties":{"OBJECTID":55,"ID":55,"LINE_ID":6,"LINE_NAME":"Orange Line","STAT_ID":14,"STAT_NAME":"Hotel Hilton/Stadtpark","SE_ANNO_CAD_DATA":null}},{"type":"Feature","id":"TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ea5","geometry":{"type":"Point","coordinates":[16.36328019965288,48.198828626320335]},"geometry_name":"SHAPE","properties":{"OBJECTID":56,"ID":56,"LINE_ID":2,"LINE_NAME":"Yellow Line","STAT_ID":27,"STAT_NAME":"Naschmarkt/Theater a.d.Wien","SE_ANNO_CAD_DATA":null}}],"crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:EPSG::4326"}}}
+ {
+    "type": "FeatureCollection",
+    "totalFeatures": 56,
+    "features": [{
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7edc",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.36935904770234, 48.202633348016846]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 1,
+            "ID": 1,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 1,
+            "STAT_NAME": "Staatsoper",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7edb",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.361925659691156, 48.20495531437401]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 2,
+            "ID": 2,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 2,
+            "STAT_NAME": "Kunsthistorisches Museum",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eda",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.361623169449032, 48.20279744448567]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 3,
+            "ID": 3,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 3,
+            "STAT_NAME": "Mariahilfer Straße",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed9",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.361507358161838, 48.20966708834754]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 4,
+            "ID": 4,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 5,
+            "STAT_NAME": "Burgtheater/Rathaus",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed8",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.36208588511522, 48.212565363709956]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 5,
+            "ID": 5,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 6,
+            "STAT_NAME": "Liebenberg Denkmal",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed7",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.363777402354103, 48.216035356679185]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 6,
+            "ID": 6,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 7,
+            "STAT_NAME": "Liechtensteinstraße",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed6",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.375807980823687, 48.22248674879128]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 7,
+            "ID": 7,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 8,
+            "STAT_NAME": "Augarten",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed5",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.38065862423194, 48.21733264047538]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 8,
+            "ID": 8,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 9,
+            "STAT_NAME": "Taborstraße",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed4",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.37912507673926, 48.212741469531395]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 9,
+            "ID": 9,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 10,
+            "STAT_NAME": "Schwedenbrücke",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed3",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.376672736234166, 48.21212562654462]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 10,
+            "ID": 10,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 11,
+            "STAT_NAME": "Morzinplatz",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed2",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.377645629147047, 48.21182223592462]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 11,
+            "ID": 11,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 12,
+            "STAT_NAME": "Schwedenplatz",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed1",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.382011427066764, 48.20666093962066]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 12,
+            "ID": 12,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 13,
+            "STAT_NAME": "MAK/Wien-Mitte",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ed0",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.382298774776523, 48.205788767021694]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 13,
+            "ID": 13,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 14,
+            "STAT_NAME": "Hotel Hilton/Stadtpark",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ecf",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.37782353678995, 48.20323786047263]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 14,
+            "ID": 14,
+            "LINE_ID": 1,
+            "LINE_NAME": "Red Line",
+            "STAT_ID": 15,
+            "STAT_NAME": "Kursalon",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ece",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.3938856816957, 48.21121665896683]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 15,
+            "ID": 15,
+            "LINE_ID": 3,
+            "LINE_NAME": "Blue Line",
+            "STAT_ID": 17,
+            "STAT_NAME": "Kunst Haus",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ecd",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.395637071167755, 48.217704326718284]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 16,
+            "ID": 16,
+            "LINE_ID": 3,
+            "LINE_NAME": "Blue Line",
+            "STAT_ID": 18,
+            "STAT_NAME": "Prater",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ecc",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.405754171417872, 48.22587032203087]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 17,
+            "ID": 17,
+            "LINE_ID": 3,
+            "LINE_NAME": "Blue Line",
+            "STAT_ID": 19,
+            "STAT_NAME": "Reichsbrücke/Pier 3",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ecb",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.40589620583711, 48.22575708897929]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 18,
+            "ID": 18,
+            "LINE_ID": 3,
+            "LINE_NAME": "Blue Line",
+            "STAT_ID": 20,
+            "STAT_NAME": "Reichsbrücke/Pier 8",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eca",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.408751517150495, 48.241910370541355]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 19,
+            "ID": 19,
+            "LINE_ID": 3,
+            "LINE_NAME": "Blue Line",
+            "STAT_ID": 21,
+            "STAT_NAME": "Donauturm",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec9",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.42408080808733, 48.23795457700857]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 20,
+            "ID": 20,
+            "LINE_ID": 3,
+            "LINE_NAME": "Blue Line",
+            "STAT_ID": 22,
+            "STAT_NAME": "Alte Donau",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec8",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.41714213113326, 48.232650959757926]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 21,
+            "ID": 21,
+            "LINE_ID": 3,
+            "LINE_NAME": "Blue Line",
+            "STAT_ID": 23,
+            "STAT_NAME": "UNO City",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec7",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.409739647712616, 48.22867328876768]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 22,
+            "ID": 22,
+            "LINE_ID": 3,
+            "LINE_NAME": "Blue Line",
+            "STAT_ID": 24,
+            "STAT_NAME": "Reichsbrücke",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec6",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.393220752033628, 48.218253570854074]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 23,
+            "ID": 23,
+            "LINE_ID": 3,
+            "LINE_NAME": "Blue Line",
+            "STAT_ID": 25,
+            "STAT_NAME": "Praterstern",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec5",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.313345025353744, 48.18674885301905]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 24,
+            "ID": 24,
+            "LINE_ID": 2,
+            "LINE_NAME": "Yellow Line",
+            "STAT_ID": 28,
+            "STAT_NAME": "Schloss Schönbrunn",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec4",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.376305687462693, 48.184424667665034]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 25,
+            "ID": 25,
+            "LINE_ID": 2,
+            "LINE_NAME": "Yellow Line",
+            "STAT_ID": 29,
+            "STAT_NAME": "Hauptbahnhof/Sonnwendgasse",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec3",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.388963190269205, 48.18431612869022]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 26,
+            "ID": 26,
+            "LINE_ID": 2,
+            "LINE_NAME": "Yellow Line",
+            "STAT_ID": 30,
+            "STAT_NAME": "Heeresgeschichtliches Museum",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec2",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.382972740902968, 48.186269906054505]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 27,
+            "ID": 27,
+            "LINE_ID": 2,
+            "LINE_NAME": "Yellow Line",
+            "STAT_ID": 31,
+            "STAT_NAME": "21er Haus Wien",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec1",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.379809935040786, 48.191121480265814]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 28,
+            "ID": 28,
+            "LINE_ID": 2,
+            "LINE_NAME": "Yellow Line",
+            "STAT_ID": 32,
+            "STAT_NAME": "Schloss Belvedere",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ec0",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.375354117765802, 48.19774082309208]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 29,
+            "ID": 29,
+            "LINE_ID": 2,
+            "LINE_NAME": "Yellow Line",
+            "STAT_ID": 33,
+            "STAT_NAME": "Schwarzenberg Platz",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ebf",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.358429676967152, 48.222871114551516]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 30,
+            "ID": 30,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 36,
+            "STAT_NAME": "Palais Liechtenstein",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ebe",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.34398028778266, 48.25589258199248]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 31,
+            "ID": 31,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 36,
+            "STAT_NAME": "Grinzing/Sandgasse",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ebd",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.336822699801328, 48.25884767356834]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 32,
+            "ID": 32,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 37,
+            "STAT_NAME": "Grinzing/Cobenzlgasse",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ebc",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.336460209175716, 48.27506504622829]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 33,
+            "ID": 33,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 38,
+            "STAT_NAME": "Kahlenberg",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ebb",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.329097071200714, 48.30495658291962]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 34,
+            "ID": 34,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 41,
+            "STAT_NAME": "Stift Klosterneuburg",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eba",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.326576098566022, 48.30368591166329]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 35,
+            "ID": 35,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 42,
+            "STAT_NAME": "Roman-Scholz-Platz",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb9",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.357524229808003, 48.23739726061796]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 36,
+            "ID": 36,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 45,
+            "STAT_NAME": "Schlumberger/Spittelau",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb8",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.367250077013825, 48.221414278166996]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 37,
+            "ID": 37,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 46,
+            "STAT_NAME": "Rossauer Lände",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb7",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.36014082268108, 48.215534199722015]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 38,
+            "ID": 38,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 47,
+            "STAT_NAME": "Votivkirche/Altes AKH",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb6",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.356215271937582, 48.21099785003628]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 39,
+            "ID": 39,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 48,
+            "STAT_NAME": "Friedrich-Schmidt-Platz",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb5",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.860252557710787, 48.112275291315434]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 40,
+            "ID": 40,
+            "LINE_ID": 5,
+            "LINE_NAME": "Grey Line",
+            "STAT_ID": 52,
+            "STAT_NAME": "Römerstadt Carnuntum",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb4",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.90097922479333, 48.19790037328049]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 41,
+            "ID": 41,
+            "LINE_ID": 5,
+            "LINE_NAME": "Grey Line",
+            "STAT_ID": 54,
+            "STAT_NAME": "Schloss Niederweiden",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb3",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.937218737169275, 48.213893057989026]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 42,
+            "ID": 42,
+            "LINE_ID": 5,
+            "LINE_NAME": "Grey Line",
+            "STAT_ID": 55,
+            "STAT_NAME": "Schloss Hof",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb2",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.519305120360585, 47.84647065412761]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 43,
+            "ID": 43,
+            "LINE_ID": 6,
+            "LINE_NAME": "Orange Line",
+            "STAT_ID": 61,
+            "STAT_NAME": "Eisenstadt",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb1",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.519694231435157, 47.84581369628876]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 44,
+            "ID": 44,
+            "LINE_ID": 6,
+            "LINE_NAME": "Orange Line",
+            "STAT_ID": 62,
+            "STAT_NAME": "Eisenstadt",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eb0",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.544244065487902, 47.82128260285334]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 45,
+            "ID": 45,
+            "LINE_ID": 6,
+            "LINE_NAME": "Orange Line",
+            "STAT_ID": 63,
+            "STAT_NAME": "Weingut Esterházy",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eaf",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.6465547376921, 47.80219262236038]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 46,
+            "ID": 46,
+            "LINE_ID": 6,
+            "LINE_NAME": "Orange Line",
+            "STAT_ID": 65,
+            "STAT_NAME": "Märchenpark/St. Margarethen",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eae",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.6782493748719, 47.80209345256028]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 47,
+            "ID": 47,
+            "LINE_ID": 6,
+            "LINE_NAME": "Orange Line",
+            "STAT_ID": 66,
+            "STAT_NAME": "Rust Seehotel",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ead",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.36940357109592, 48.2026220657252]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 48,
+            "ID": 48,
+            "LINE_ID": 2,
+            "LINE_NAME": "Yellow Line",
+            "STAT_ID": 1,
+            "STAT_NAME": "Staatsoper",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eac",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.361983357154326, 48.20491604149029]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 49,
+            "ID": 49,
+            "LINE_ID": 2,
+            "LINE_NAME": "Yellow Line",
+            "STAT_ID": 2,
+            "STAT_NAME": "Kunsthistorisches Museum",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eab",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.36146131576848, 48.20964252992925]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 50,
+            "ID": 50,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 5,
+            "STAT_NAME": "Burgtheater/Rathaus",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7eaa",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.36201798891372, 48.21252126730682]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 51,
+            "ID": 51,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 6,
+            "STAT_NAME": "Liebenberg Denkmal",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ea9",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.363797313725524, 48.216015015549004]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 52,
+            "ID": 52,
+            "LINE_ID": 4,
+            "LINE_NAME": "Green Line",
+            "STAT_ID": 7,
+            "STAT_NAME": "Liechtensteinstraße",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ea8",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.381982516456443, 48.20667837102631]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 53,
+            "ID": 53,
+            "LINE_ID": 3,
+            "LINE_NAME": "Blue Line",
+            "STAT_ID": 13,
+            "STAT_NAME": "MAK/Wien-Mitte",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ea7",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.382249016111004, 48.20579351652877]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 54,
+            "ID": 54,
+            "LINE_ID": 5,
+            "LINE_NAME": "Grey Line",
+            "STAT_ID": 14,
+            "STAT_NAME": "Hotel Hilton/Stadtpark",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ea6",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.382263513909226, 48.20582195717883]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 55,
+            "ID": 55,
+            "LINE_ID": 6,
+            "LINE_NAME": "Orange Line",
+            "STAT_ID": 14,
+            "STAT_NAME": "Hotel Hilton/Stadtpark",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }, {
+        "type": "Feature",
+        "id": "TOURISTIKHTSVSLOGD.fid--6f6deb53_1791de216c6_-7ea5",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [16.36328019965288, 48.198828626320335]
+        },
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 56,
+            "ID": 56,
+            "LINE_ID": 2,
+            "LINE_NAME": "Yellow Line",
+            "STAT_ID": 27,
+            "STAT_NAME": "Naschmarkt/Theater a.d.Wien",
+            "SE_ANNO_CAD_DATA": null
+        }
+    }],
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+        }
+    }
+}
