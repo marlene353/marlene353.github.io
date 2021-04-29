@@ -81,15 +81,16 @@ let drawBusLines = (geojsonData) => {
             layer.bindPopup(`<strong>${feature.properties.LINE_NAME}</strong>
             <hr>
             von ${feature.properties.FROM_NAME}<br>
-            nach ${feature.properties.TO_NAME}´)
+            nach ${feature.properties.TO_NAME}´);
+           }
         }
     }).addTo(overlays.busLines);
 }
 
 let drawPedAreas = (geojsonData) => {
     L.geoJson(geojsonData, {
-                style: (feature) => {
-                    return {
+         style: (feature) => {
+                return {
                         stroke: true,
                         color: "silver",
                         fillColor: "yellow",
@@ -97,16 +98,11 @@ let drawPedAreas = (geojsonData) => {
                     }
                 },
                 onEachFeature: (feature, layer) => {
-                        layer.bindPopup(` < strong > Fußgängerzone$ {
-                    feature.properties.ADRESSE
-                } < /strong> <
-                hr >
-                von $ {
-                    feature.properties.ZEITRAUM
-                } < br >
-                nach $ {
-                    feature.properties.AUSN_TEXT
-                }´);
+                        layer.bindPopup(`<strong>Fußgängerzone ${feature.properties.ADRESSE}</strong> 
+                <hr>
+                von $ {feature.properties.ZEITRAUM} < br >
+                nach $ {feature.properties.AUSN_TEXT}´);
+            }
         }
     }).addTo(overlays.pedAreas);
 }
