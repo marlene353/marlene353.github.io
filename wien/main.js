@@ -46,23 +46,33 @@ let layerControl = L.control.layers({
 // alle Overlays nach dem Laden anzeigen
 overlays.busLines.addTo(map);
 overlays.busStops.addTo(map);
-overlays.pedAreas.addTo(map);
+overlays.pedAreas.addTo(map); 
 
-//data wien + popup&name + busstopicon
-fetch("data/TOURISTIKHTSVSLOGD.json")
-    .then(response => response.json())
-    .then(stations => {
-        L.geoJson(stations, {
-            onEachFeature: (feature, layer) => {
-                layer.bindPopup(feature.properties.STAT_NAME)
-            },
-            pointToLayer: (geoJsonPoint, latlng) => {
-                return L.marker(latlng, {
-                    icon: L.icon({
-                        iconUrl: 'icons/busstop.png',
-                        iconSize: [38, 38]
-                    })
+let drawBuStop = (geojsonData) => {
+    L.geoJson(geojsonData, {
+        onEachFeature: (feature, layer) => {
+           layer.bindPopup(feature.properties.STAT_NAME)
+        },
+        pointToLayer: (geoJsonPoint, latlng) => {
+            return L.marker(latlng, {
+                icon: L.icon({
+                    iconUrl: 'icons/busstop.png',
+                    iconSize: [38, 38]
                 })
+            })
+        }
+    }).addTo(overlays.busStops);
+}
+
+
+for (let config of OGDWIEN) {
+    console.log("Config: ", config.data);
+    fetch(config.data)
+        .then(response => response.json())
+        .then(geojsonData => {
+            console.log("Data: ", geojsonData);
+            if (config.title == "Haltestellen Vienna Sightseeing") {
+                drawBusStop(geojsonData);
             }
-        }).addTo(map);
-    })
+        })
+}
