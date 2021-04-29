@@ -60,7 +60,8 @@ let drawBuStop = (geojsonData) => {
                     iconSize: [38, 38]
                 })
             })
-        }
+        },
+        attribution:'<a href= "https://data.wien.gv.at"> Stadt Wien> , <a href= "https://mapicons.mapsmarker.com"> Maps Icons Collection< 
     }).addTo(overlays.busStops);
 }
 
