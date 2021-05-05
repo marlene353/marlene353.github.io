@@ -49,6 +49,7 @@ let layerControl = L.control.layers({
 overlays.busLines.addTo(map);
 overlays.busStops.addTo(map);
 overlays.pedAreas.addTo(map);
+overlays.sights.addTo(map);
 
 //Funktion BUSHALTESTELLEN
 let drawBusStop = (geojsonData) => {
