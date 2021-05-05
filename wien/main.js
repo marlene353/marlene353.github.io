@@ -17,7 +17,8 @@ let baselayers = {
 let overlays = {
     busLines: L.featureGroup(),
     busStops: L.featureGroup(),
-    pedAreas: L.featureGroup()
+    pedAreas: L.featureGroup(),
+    sights: L.featureGroup()
 };
 
 // Karte initialisieren und auf Wiens Wikipedia Koordinate blicken
@@ -107,11 +108,33 @@ let drawPedAreas = (geojsonData) => {
                 },
                 onEachFeature: (feature, layer) => {
                         layer.bindPopup(`<strong> Fußgängerzone ${feature.properties.ADRESSE} </strong>  
-                    <hr >
+                    <hr>
                     von ${feature.properties.ZEITRAUM } <br>
                     nach ${feature.properties.AUSN_TEXT}`);
         }
     }).addTo(overlays.pedAreas);
+}
+
+//Funktion SEHENSWÜRDIGKEITEN
+let drawSights = (geojsonData) => {
+    L.geoJson(geojsonData, {
+                onEachFeature: (feature, layer) => {
+                        layer.bindPopup(`<strong> Sehenswürdigkeiten ${feature.properties.ADRESSE} </strong>  
+                    <hr>
+                    von ${feature.properties.NAME } <br>
+                    nach ${feature.properties.ADRESSE}
+                    <i class="fas fa-external-link-alt mr-3"></i> <a href='${feature.properties.WEITERE_INF}'>Weitere Infos</a>`)
+        },
+        // icon einfügen wie bei Busstop
+        pointToLayer: (geoJsonPoint, latlng) => {
+            return L.marker(latlng, {
+                icon: L.icon({
+                    iconUrl: 'icons/sehenswuerdigodg.png',
+                    iconSize: [20, 20]
+                })
+            })
+        },
+    }).addTo(overlays.sights);
 }
 
 for (let config of OGDWIEN) {
@@ -124,6 +147,8 @@ for (let config of OGDWIEN) {
                 drawBusLines(geojsonData);
             } else if (config.title === "Fußgängerzonen") {
                 drawPedAreas(geojsonData);
+            } else if (config.title === "Sehenswürdigkeiten") {
+                drawSights (geojsonData);
             }
         })
 }
