@@ -122,8 +122,8 @@ let drawSights = (geojsonData) => {
                 onEachFeature: (feature, layer) => {
                         layer.bindPopup(`<strong> Sehenswürdigkeiten ${feature.properties.ADRESSE} </strong>  
                     <hr>
-                    von ${feature.properties.NAME } <br>
-                    nach ${feature.properties.ADRESSE}
+                     ${feature.properties.NAME } <br>
+                     ${feature.properties.ADRESSE}
                     <i class="fas fa-external-link-alt mr-3"></i> <a href='${feature.properties.WEITERE_INF}'>Weitere Infos</a>`)
         },
         // icon einfügen wie bei Busstop
