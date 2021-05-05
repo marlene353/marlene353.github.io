@@ -114,7 +114,7 @@ for (let config of OGDWIEN) {
             } else if (config.title == "Liniennetz Vienna Sightseeing") {
                 drawBusLines(geojsonData);
             } else if (config.title === "Fußgängerzonen") {
-                drawPedestrianAreas(geojsonData);
+                drawPedAreas(geojsonData);
             }
         })
 }
