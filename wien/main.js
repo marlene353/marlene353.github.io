@@ -159,7 +159,7 @@ for (let config of OGDWIEN) {
 //Leaflet hash
 new L.Hash (map);
 
-//miniMap + 
+//miniMap + Minimize button + minimize
 var miniMap = new L.Control.MiniMap(
     L.tileLayer.provider("BasemapAT.basemap"), {
         toggleDisplay: true,
