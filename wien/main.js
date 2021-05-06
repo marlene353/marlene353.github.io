@@ -10,7 +10,7 @@ let baselayers = {
     ortho_overlay: L.layerGroup([
         L.tileLayer.provider("BasemapAT.orthofoto"),
         L.tileLayer.provider("BasemapAT.overlay")
-    ]), 
+    ]),
 };
 
 // Overlays für die Themen zum Ein- und Ausschalten definieren
@@ -81,36 +81,36 @@ let drawBusStop = (geojsonData) => {
 let drawBusLines = (geojsonData) => {
     console.log('Bus Lines: ', geojsonData);
     L.geoJson(geojsonData, {
-            style: (feature) => {
-                //Farbe aus colors.js
-                let col = "red";
-                col = COLORS.buslines[feature.properties.LINE_NAME];
-                return {
-                    color: col
-                }
-            },
-            onEachFeature: (feature, layer) => {
-                layer.bindPopup(`<strong>${feature.properties.LINE_NAME}</strong>
+        style: (feature) => {
+            //Farbe aus colors.js
+            let col = "red";
+            col = COLORS.buslines[feature.properties.LINE_NAME];
+            return {
+                color: col
+            }
+        },
+        onEachFeature: (feature, layer) => {
+            layer.bindPopup(`<strong>${feature.properties.LINE_NAME}</strong>
             <hr>
             von ${feature.properties.FROM_NAME}<br>
             nach ${feature.properties.TO_NAME}`);
-           }
+        }
     }).addTo(overlays.busLines);
 }
 
 //Funktion FUSSGÄNGERZONEN
 let drawPedAreas = (geojsonData) => {
     L.geoJson(geojsonData, {
-         style: (feature) => {
-                return {
-                        stroke: true,
-                        color: "silver",
-                        fillColor: "yellow",
-                        fillOpacity: 0.3
-                    }
-                },
-                onEachFeature: (feature, layer) => {
-                        layer.bindPopup(`<strong> Fußgängerzone ${feature.properties.ADRESSE} </strong>  
+        style: (feature) => {
+            return {
+                stroke: true,
+                color: "silver",
+                fillColor: "yellow",
+                fillOpacity: 0.3
+            }
+        },
+        onEachFeature: (feature, layer) => {
+            layer.bindPopup(`<strong> Fußgängerzone ${feature.properties.ADRESSE} </strong>  
                     <hr>
                     von ${feature.properties.ZEITRAUM } <br>
                     nach ${feature.properties.AUSN_TEXT}`);
@@ -121,8 +121,8 @@ let drawPedAreas = (geojsonData) => {
 //Funktion SEHENSWÜRDIGKEITEN
 let drawSights = (geojsonData) => {
     L.geoJson(geojsonData, {
-                onEachFeature: (feature, layer) => {
-                        layer.bindPopup(`<strong> Sehenswürdigkeiten ${feature.properties.ADRESSE} </strong>  
+        onEachFeature: (feature, layer) => {
+            layer.bindPopup(`<strong> Sehenswürdigkeiten ${feature.properties.ADRESSE} </strong>  
                     <hr>
                      ${feature.properties.NAME } <br>
                      ${feature.properties.ADRESSE}
@@ -151,13 +151,13 @@ for (let config of OGDWIEN) {
             } else if (config.title === "Fußgängerzonen") {
                 drawPedAreas(geojsonData);
             } else if (config.title === "Sehenswürdigkeiten") {
-                drawSights (geojsonData);
+                drawSights(geojsonData);
             }
         })
 }
 
 //Leaflet hash
-new L.Hash (map);
+new L.Hash(map);
 
 //miniMap + Minimize button + minimize
 var miniMap = new L.Control.MiniMap(
@@ -165,13 +165,19 @@ var miniMap = new L.Control.MiniMap(
         toggleDisplay: true,
         minimized: true
     }
-    ).addTo(map);
+).addTo(map);
 
-    //Reachability plugin
-    L.control.reachability ({
-        // add settings/options here
-        apiKey: '5b3ce3597851110001cf6248083c3751f2544eb0982346d2c7f6536c',
-        drawButtonContent: '',
+//Reachability plugin
+
+let styleIntervals = (feature) => {
+    console.log(feature.properties);
+};
+
+L.control.reachability({
+    // add settings/options here
+    apiKey: '5b3ce3597851110001cf6248083c3751f2544eb0982346d2c7f6536c',
+    styleFn: styleIntervals,
+    drawButtonContent: '',
     drawButtonStyleClass: 'fa fa-pencil-alt fa-2x',
     deleteButtonContent: '',
     deleteButtonStyleClass: 'fa fa-trash fa-2x',
@@ -187,4 +193,4 @@ var miniMap = new L.Control.MiniMap(
     travelModeButton3StyleClass: 'fa fa-male fa-2x',
     travelModeButton4Content: '',
     travelModeButton4StyleClass: 'fa fa-wheelchair fa-2x'
-    }).addTo(map);
+}).addTo(map);
