@@ -8,6 +8,7 @@ let stop = {
 }
 
 const map = L.map("map", {
+    fullscreenControl: true,
     // center: [ stop.lat, stop.lng  ],
     // zoom: 13,
     layers: [
@@ -59,3 +60,12 @@ nav.onchange = (evt) => {
 
 //<option value="webmapping">Oamaru</option>
 //console.log(document.querySelector("#map"));
+
+
+//miniMap + Minimize button + minimize
+var miniMap = new L.Control.MiniMap(
+    L.tileLayer.provider('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'), {
+        toggleDisplay: true,
+        minimized: true
+    }
+).addTo(map);

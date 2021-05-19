@@ -14,11 +14,28 @@
     <title>New Zealand Journey - Oamaru</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet-src.min.js"></script>
 
+    <!---Leaflet miniMap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"
+        integrity="sha512-efbAfGnrnjA+hLwOLu91W034fBGPsMwZMVCTwLUI2PDX/m7rOiuhYZ+D2mZ8rKcpC/I/7pdgoL8T4eYvMHNoQg=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"
+        integrity="sha512-ceQPs2CHke3gSINLt/JV37W1rfJOM64yuH999hnRhTP7tNtcSBp5hlTKhn8CEIhsFweSBrZMPVotAKjoyxGWNg=="
+        crossorigin="anonymous"></script>
+
+
+    <!--Leaflet fullscreen-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/2.0.0/Control.FullScreen.css"
+        integrity="sha512-KQk/GTCcAywe4iEOhnZ6ZmWDNv/3NvOE6f0iUvrNVCX/oD7+sPXAeDP90aOX3EXHmerC6gDYUlUBaSd4hxjWEw=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/2.0.0/Control.FullScreen.js"
+        integrity="sha512-TaNrKSd5TOm4PfgJMFYkDpQ1X8GmqXBlh+Kmk83Mfrcx9sjTzqI1zcZd0n0xpdJevfPL7voAcbblrUaYx+LM1g=="
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="main.css">
     <script src="route.js"></script>
     <script defer src="main.js"></script> <!-- defer = script wird als letztes ausgelesen und ausgeführt -->
 
-   
+
 </head>
 
 
@@ -72,27 +89,30 @@
             (Quelle: <a href="https://en.wikipedia.org/wiki/Oamaru"> Wikipedia</a>)
         </p>
 
-       
+
         <h3>Overview map<i class="ml-3 fas fa-map-marked-alt"></i></h3>
         <div id="map">
         </div>
         <label for="navigation">Route Navigation:</label>
-        <select name="New Zealand Journey" id= "navigation">
+        <select name="New Zealand Journey" id="navigation">
         </select>
-           
+
 
         <h3>Links</h3>
         <p>Weitere Sehenswürdigkeiten vor Ort:
         </p>
         <ul>
-            <li><i class="fas fa-external-link-alt mr-3"></i><a 
-                href="https://www.nationalpark.co.nz/">Tongariro National Park Visitor Information</a></li>
+            <li><i class="fas fa-external-link-alt mr-3"></i><a href="https://www.nationalpark.co.nz/">Tongariro
+                    National Park Visitor Information</a></li>
             <li><i class="fas fa-external-link-alt mr-3"></i><a
-                 href="https://www.newzealand.com/de/feature/national-parks-tongariro/">Tongariro Nationalpark | Ruapehu</a></li>
-            <li><i class="fas fa-external-link-alt mr-3"></i><a 
-                href="https://wikitravel.org/de/Tongariro_National_Park">Tongariro National Park – Wikitravel</a></li>
+                    href="https://www.newzealand.com/de/feature/national-parks-tongariro/">Tongariro Nationalpark |
+                    Ruapehu</a></li>
             <li><i class="fas fa-external-link-alt mr-3"></i><a
-                 href="https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-alpine-crossing/">Tongariro Alpine Crossing</a></li>
+                    href="https://wikitravel.org/de/Tongariro_National_Park">Tongariro National Park – Wikitravel</a>
+            </li>
+            <li><i class="fas fa-external-link-alt mr-3"></i><a
+                    href="https://www.doc.govt.nz/parks-and-recreation/places-to-go/central-north-island/places/tongariro-national-park/things-to-do/tracks/tongariro-alpine-crossing/">Tongariro
+                    Alpine Crossing</a></li>
         </ul>
 
     </main>
@@ -104,7 +124,8 @@
         </p>
         <nav>
             <a class="back" href="https://silja18.github.io/nz/"><i class="fas fa-arrow-left mr-3"></i>Omarama</a>
-            <a class="next" href="https://anna7br.github.io/nz/">Moeraki Boulders<i class="fas fa-arrow-right ml-3"></i></a>
+            <a class="next" href="https://anna7br.github.io/nz/">Moeraki Boulders<i
+                    class="fas fa-arrow-right ml-3"></i></a>
         </nav>
     </footer>
 
