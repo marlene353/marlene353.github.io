@@ -146,7 +146,7 @@ fetch(awsUrl)
 
 //miniMap + Minimize button + minimize
 var miniMap = new L.Control.MiniMap(
-    L.tileLayer.provider("BasemapAT.basemap"), {
+    L.tileLayer.provider("BasemapAT.grau"), {
         toggleDisplay: true,
         minimized: true
     }
