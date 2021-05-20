@@ -42,3 +42,18 @@ let layerControl = L.control.layers({
 
 // Overlay mit GPX-Track anzeigen
 overlays.tracks.addTo(map);
+
+const drawTrack = (nr) => {
+    console.log('Track: ', nr);
+    let gpxTrack = new L.GPX(`tracks/${nr}.gpx`),{
+            async: true,
+            marker_options: {
+                startIconUrl: `icons/number_${nr}.png`,
+                endIconUrl: 'icons/finish.png',
+                shadowUrl: null,
+              }
+        }).addTo(overlays.tracks);
+};
+
+const selectedTrack = 32;
+drawTrack(selectedTrack);
