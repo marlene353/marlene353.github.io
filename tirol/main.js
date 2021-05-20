@@ -45,14 +45,23 @@ overlays.tracks.addTo(map);
 
 const drawTrack = (nr) => {
     console.log('Track: ', nr);
-    let gpxTrack = new L.GPX(`tracks/${nr}.gpx`),{
+    let gpxTrack = new L.GPX(`tracks/${nr}.gpx`),
+        {
             async: true,
             marker_options: {
                 startIconUrl: `icons/number_${nr}.png`,
                 endIconUrl: 'icons/finish.png',
                 shadowUrl: null,
-              }
+            },
+            polyline_options: {
+                color: 'black',
+                dashArray: [2, 5],
+            },
         }).addTo(overlays.tracks);
+        gpxTrack.on("loaded", () => {
+            console.log('loaded gpx');
+            map.fitBounds(gpxTrack.getBounds());
+        })
 };
 
 const selectedTrack = 32;
