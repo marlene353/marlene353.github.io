@@ -43,9 +43,11 @@ let layerControl = L.control.layers({
 // Overlay mit GPX-Track anzeigen
 overlays.tracks.addTo(map);
 
+// Höhenplugin
 const elevationControl = L.control.elevation({
     elevationDiv:"#profile",
     followMarker: false,
+    theme: 'lime-theme',
 }).addTo(map);
 
 const drawTrack = (nr) => {
@@ -74,8 +76,8 @@ const drawTrack = (nr) => {
              <li>Streckenlänge: ${gpxTrack.get_distance()} </li>
              <li>tiefster Punkt: ${gpxTrack.get_elevation_min()} </li>
              <li>höchster Punkt: ${gpxTrack.get_elevation_max()} </li>
-             <li>Höhenmeter bergauf Punkt: ${gpxTrack.get_elevation_max()} </li> 
-             <li>Höhenmeter bergab Punkt: ${gpxTrack.get_elevation_min()} </li> 
+             <li>Höhenmeter bergauf Punkt: ${gpxTrack.get_elevation_gain()} </li> 
+             <li>Höhenmeter bergab Punkt: ${gpxTrack.get_elevation_loss()} </li> 
              </ul>                       
             `);
         });
