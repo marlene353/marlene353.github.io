@@ -27,3 +27,12 @@ header a {
     height: 70vh;
     border: 1px solid gray;
 }
+
+#profile {
+    margin-top: 0.3em;
+    border: 1px solid gray;
+}
+/*linie unsichtbar*/
+#map path.lime_theme.elevation-polyline {
+    stroke-opacity: 0;
+}
