@@ -51,7 +51,9 @@ const elevationControl = L.control.elevation({
 }).addTo(map);
 
 const drawTrack = (nr) => {
-    console.log('Track: ', nr);
+    //console.log('Track: ', nr);
+    elevationControl.clear();
+    overlays.tracks.clearLayers();
     let gpxTrack = new L.GPX(`tracks/${nr}.gpx`,
         {
             async: true,
@@ -88,7 +90,7 @@ const selectedTrack = 32;
 drawTrack(selectedTrack);
 
 console.log('biketirol json: ', BIKETIROL);
-let pulldown = document.querySelector("'pulldown");
+let pulldown = document.querySelector("pulldown");
 console.log('Pulldown: ',pulldown);
 for (let track of BIKETIROL) {
     if(selectedTrack == track.nr) {
