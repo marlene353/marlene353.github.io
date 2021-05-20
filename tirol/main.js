@@ -51,7 +51,6 @@ const elevationControl = L.control.elevation({
 }).addTo(map);
 
 const drawTrack = (nr) => {
-    //console.log('Track: ', nr);
     elevationControl.clear();
     overlays.tracks.clearLayers();
     let gpxTrack = new L.GPX(`tracks/${nr}.gpx`,
@@ -90,6 +89,8 @@ const selectedTrack = 32;
 drawTrack(selectedTrack);
 
 let pulldown = document.querySelector("#pulldown");
+
+//Schleife zum Aufbau pulldown menu
 let selected = '';
 for (let track of BIKETIROL) {
     if (selectedTrack == track.nr) {
@@ -100,6 +101,7 @@ for (let track of BIKETIROL) {
     pulldown.innerHTML += `<option ${selected} value="${track.nr}">${track.nr}: ${track.etappe}</option>`;
 }
 
+//Eventhändler für Änderung des Dropdown
 pulldown.onchange = () => {
     drawTrack(pulldown.value);
 };
