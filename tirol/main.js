@@ -66,6 +66,7 @@ const drawTrack = (nr) => {
                 dashArray: [2, 5],
             },
         }).addTo(overlays.tracks);
+        //Eventhandler wenn alle Daten des gpx plugin geladen sind
         gpxTrack.on("loaded", () => {
             console.log('loaded gpx');
             map.fitBounds(gpxTrack.getBounds());
